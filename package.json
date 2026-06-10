@@ -1,0 +1,63 @@
+{
+  "name": "indian-food-nutrition-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server for Indian-accurate nutrition logging. Log meals with ChatGPT/Claude in plain language or from photos; calories come from India's official food data (IFCT 2017) + USDA, not US-centric guesses.",
+  "bin": {
+    "indian-food-nutrition-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "build:indb": "node scripts/build-indb.mjs",
+    "build:usda": "node scripts/build-usda.mjs",
+    "prepublishOnly": "tsc"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@nodef/ifct2017": "npm:@jsr/nodef__ifct2017@^1.4.5",
+    "better-sqlite3": "^11.0.0",
+    "csv-parse": "^5.6.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "xlsx": "^0.18.5"
+  },
+  "license": "AGPL-3.0-or-later",
+  "author": "Krishna Bhat",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishnabhat/indian-food-nutrition-mcp.git"
+  },
+  "homepage": "https://github.com/krishnabhat/indian-food-nutrition-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/krishnabhat/indian-food-nutrition-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "nutrition",
+    "indian-food",
+    "calorie-tracker",
+    "ifct",
+    "claude",
+    "chatgpt",
+    "food-logging",
+    "macros"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "data/ifct-compositions.csv",
+    "data/usda-foods.csv",
+    "scripts",
+    "README.md",
+    "DATA_SOURCES.md",
+    "LICENSE"
+  ]
+}
