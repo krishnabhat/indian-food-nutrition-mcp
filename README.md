@@ -10,7 +10,7 @@ databases that think a roti is a tortilla.
 
 ## Why
 
-Every popular calorie database is built on USDA data. It is wrong for home-cooked
+Every popular calorie database is built on USDA data. It is inaccurate for home-cooked
 Indian food: wrong oils, wrong preparations, no katori, no idli. The one app with a
 great Indian database keeps it locked behind a subscription with no API. Meanwhile
 the Indian government published the real data. This project wraps it for the AI you
