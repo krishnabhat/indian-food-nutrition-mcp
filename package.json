@@ -1,6 +1,7 @@
 {
   "name": "indian-food-nutrition-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "mcpName": "io.github.krishnabhat/indian-food-nutrition-mcp",
   "type": "module",
   "description": "MCP server for Indian-accurate nutrition logging. Log meals with ChatGPT/Claude in plain language or from photos; calories come from India's official food data (IFCT 2017) + USDA, not US-centric guesses.",
   "bin": {
